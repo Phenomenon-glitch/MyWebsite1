@@ -1,0 +1,410 @@
+
+    html, body {
+	  background-image: url('Image/BG3.png');   
+	  background-repeat: repeat;
+	  height: 100%;
+      background-position: center;
+      margin: -2px;
+      padding: 0;
+      color: #7d4734;
+      font-family: Verdana, sans-serif;
+      font-size: 12px;
+      line-height: 1.6;
+      image-rendering: pixelated;
+    }
+
+    
+header, main, footer {
+	text-align: center;
+     max-width: 650px;
+     margin: 16px auto;
+     padding: 16px;
+}
+
+body 
+{
+  background-image: url("Image/Border1.png"); 
+  background-size: 770px 210px;      
+  background-position: center 270px; 
+  background-repeat: no-repeat; 
+  margin-top: 50px;                                 
+  height:1200px;               
+  cursor: url('Image/Cursor1.png') , auto;
+}
+
+.site-header 
+{
+  background-image: url("Image/Border7.png"); 
+  background-size: 90% 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
+  padding: 10px; 
+  height: 100px;
+  text-align: center;
+  display: flex;             
+  align-items: center;          
+  padding: 20px;
+}
+
+.header-image 
+{
+	
+  width: 300px;
+  height: 300px;
+  pointer-events: auto;
+  margin-left: -100px;
+}
+
+.header-content p 
+{
+  margin: 10px 0 15px 0;
+  font-size: 12px;
+}
+
+.header-content nav a 
+{
+  margin-right: 5px;
+  text-decoration: none;
+  color: #fffff;
+  cursor: url('Image/Cursor2.png'), pointer;
+  
+}
+
+
+a:hover 
+{
+   transform: scale(1.05);
+   background-color: #fffff;
+}
+
+a,
+button:enabled,
+.header-image,
+input[type="submit"]:enabled,
+input[type="button"]:enabled 
+{
+  cursor: url('Image/Cursor2.png'), pointer;
+}
+
+button:disabled,
+input[type="submit"]:disabled,
+input[type="button"]:disabled 
+{
+  cursor: url('Image/Cursor3.gif'), not-allowed;
+}
+  
+
+    footer {
+      padding-top: 50px;
+      text-align: center;
+      color: #fffff;
+    }
+
+    h1, h2, h3, {
+      color: #fffff;
+	  font-family: 'PixelifySans';
+	  z-index: 2;  
+    }
+
+ a {
+  display: inline-flex;             /* centers text nicely */
+  align-items: center;
+  justify-content: center;
+
+  width:200px;                     /* fixed size */
+  height: 50px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: url('Image/Border7.png');
+  background-size: cover;           /* fully fill the area */
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 10px;
+  cursor: url('Image/custom-cursor.png'), pointer;
+  transition: transform 0.2s ease;
+}
+
+.a-devlog 
+{
+  display: inline-flex;            
+  align-items: center;
+  justify-content: center;
+
+  width:200px;                     
+  height: 50px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: url('Image/Devlog1.gif');
+  background-size: 100% 100%;           
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 0px;
+  cursor: url('Image/custom-cursor.png'), pointer;
+  transition: transform 0.2s ease;
+}
+
+.a-about 
+{
+  display: inline-flex;             
+  align-items: center;
+  justify-content: center;
+
+  width:200px;                    
+  height: 50px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: url('Image/About1.gif');
+  background-size: 100% 100%;           
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 0px;
+  cursor: url('Image/custom-cursor.png'), pointer;
+  transition: transform 0.2s ease;
+}
+
+.a-diy 
+{
+  display: inline-flex;             
+  align-items: center;
+  justify-content: center;
+
+  width:200px;                    
+  height: 50px;
+  
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
+  background-image: url('Image/DIY1.gif');
+  background-size: 100% 100%;           
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 0px;
+  cursor: url('Image/custom-cursor.png'), pointer;
+  transition: transform 0.2s ease;
+}
+
+
+
+
+	
+	img {
+	  -webkit-user-drag: none;
+	  user-drag: none;
+	  pointer-events: auto;
+	}
+
+   
+    .section-box {
+      padding: 5px;
+      margin: 30px 0;
+      background-color: #c9885f;
+    }
+	
+	
+	
+	@font-face {
+	  font-family: 'PixelifySans';
+	  src: url('Font/PixelifySans.ttf');
+	  font-weight: normal;
+	  font-style: normal;
+	}
+
+    
+    img {
+		align: center
+      max-width: 70%;
+      image-rendering: pixelated;
+      margin-top: 5px;
+    }
+
+    
+	
+.gallery-section {
+  display: flex;
+  flex-wrap: wrap;       
+  justify-content: space-between; 
+  gap: 20px;             
+  padding: 20px;
+  max-width: 700px;       /* limit width */
+  margin: 0 auto;         /* center the gallery */
+}
+
+.gallery-item {
+	padding-top: 40px;
+	padding-bottom: 40px;
+  background-image: url('Image/Border1.png');
+  background-size: 100% 100%;          
+  background-repeat: no-repeat;
+  background-position: center;
+  flex: 1 1 calc(50% - 30px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.gallery-item img, .gallery-item video {
+  border: 4px solid #c9885f;
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+}
+
+.gallery-item p {
+	width: 70%;
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+	
+.section-box 
+{
+    padding: 5px;
+    margin: 30px 0;
+    background-color: #c9885f;
+}
+	
+.body-bg 
+{
+	position: absolute;
+	top: 0;       
+	left: 400px;  
+	width: 500px;
+	height: 500px;
+	z-index: 1;  
+}
+	
+.LoopShowBox 
+{
+  left: -10%;
+  position: relative;
+  width: 100%;             
+  height: auto;            
+}
+
+.LoopShowBox img 
+{
+  width: 100%;  
+}
+
+.LoopShowBox .overlay-image 
+{
+  position: absolute;      
+  top: 30%;
+  left: 13%;
+  width: 75%;
+  object-fit: contain;    
+  pointer-events: none;    
+}
+
+.MiniGameBox 
+{
+  position: relative;               
+  width: 100%;      
+  height: auto;                 
+}
+
+.MiniGameBox img 
+{
+  width: 100%;
+}
+
+.MiniGameBox .gif-overlay 
+{
+  position: absolute;
+  top: 0;      
+  left: 0;
+  pointer-events: auto;
+  cursor: url('Image/Cursor2.png'), pointer;
+}
+
+.NoteBox 
+{
+  position: relative;                                 
+  width: 100%;      
+  height:auto;               
+}
+
+.NoteBox img
+{                             
+  width: 100%;                     
+}
+
+.NoteBox h1
+{
+  text-align: center;
+  position: absolute;
+  top: 10%;          
+  left: 30%;         
+  transform: translate(-50%, -50%); 
+  color: grey;     
+  font-size: 25px;   
+}
+
+.NoteBox p
+{
+  text-align: center;
+  position: absolute;
+  top: 40%;        
+  left: 45%;       
+  transform: translate(-50%, -50%); 
+  color: grey;
+  font-size: 20px;
+}
+
+.left-column, .right-column
+{
+  display: flex;
+  flex-direction: column;      
+  gap: 0px;                   
+  position: absolute;                                   
+  width: 25%;                  
+}
+
+.left-column
+{       
+  left: 5%;                                    
+}
+
+.right-column 
+{       
+  right: 3%;                                    
+}
+
+
+.left-column .LoopShowBox
+{
+  width: 100%;             
+  height: auto;  
+}
+
+.right-column .MiniGameBox,
+.right-column .NoteBox
+{
+  width: 100%;                 
+  height: auto;                
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<!-- Meine seite besteht aus einer linken (left-column), rechten(right-column) und mittleren(standart body) spalte. -->
+
+<!-- left- sowie right-column sind an sich flexboxen welche mehrere boxen beinhalten-->
+	<div class="left-column">
+	
+		<div class="LoopShowBox">	
+			<img src="Image/Border5.png" alt="OldTV">
+			<video src="Image/video2.mp4" class="overlay-image" autoplay muted playsinline loop></video>
+		</div>
+		
+		<div class="LoopShowBox">	
+			<img src="Image/Skills1.gif" alt="SkillOverview">
+		</div>
+		
+	</div>
+
+	<div class="right-column">
+	
+		<div class="MiniGameBox">
+		  <img src="Image/Border4.png" alt="MiniGameBG">
+		  <img id="slime" src="Image/Plant1.gif" alt="Overlay GIF" class="gif-overlay">
+		</div>
+
+		<div class="NoteBox">
+		  <img src="Image/Border3.png" alt="Note">
+		  <h1>Note: </h1> 
+		  <p>Take care of my Plant while i am gone. Thanks!</p>
+		</div>
+		
+		<div class="NoteBox">
+		  <img src="Image/Border3.png" alt="Note">
+		  <h1>Contact: </h1> 
+		  <p>E-Mail: anastasia_colnar@gmx.de </p>
+		</div>
+
+	</div>
+
+<!-- hier fängt die definition der mittleren spalte an (also standart body) -->
+
+	<header class="site-header">
+	  <img src="Image/Chibi1.gif" alt="Chibi character" class="header-image">
+	  <h1 style="font-size: 50px;">Welcome!</h1>
+	</header>
+
+	<header>
+		<div class="header-content">
+			<nav>
+				<a href="index.html" class="a-about"></a> 
+				<a href="Devlog.html" class="a-devlog" ></a>
+				<a href="DIY.html" class="a-diy" ></a>				
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<section id="about" class="section-box">
+			<h2 style="font-size: 20px;">About me</h2> 
+			<img src="Image/Chibi4.gif" alt="Chibi character" width="300" height="200">
+			<img src="Image/MePic1.jpg" alt="Me" width="200" height="200" style="image-rendering: auto;" >
+			<h3>I’m Anastasia Colnar, a Software Engineering student with a passion for creating various things.
+			I spend my free time programming video games, producing music, drawing and exploring all things that are creative.
+			</h3>
+		</section>
+		
+		<section id="about" class="section-box"> 
+			<ul>
+				<h2>Timeline</h2>
+				<br>
+				<h3 style="text-align: left;">2024-Now: Hochschule Esslingen Studium: Softwaretechnik</h3>
+				<h3 style="text-align: left;">2021-2024:  Max-Eyth-Schule Stuttgart (Technisches Gymnasium: Schwerpunkt Mechatronik)</h3>
+				<h3 style="text-align: left;">2015-2021:  Riegelhof Realschule Nellingen</h3>
+				<h3 style="text-align: left;" >2011-2015:  Pfingstweideschule Kemnat </h3>
+			</ul>
+		</section>
+	
+	
+	</main>
+
+	<footer>
+		<p style="color: #ffffff;">Last Update: 10.02.2026 </p>
+		<p style="color: #ffffff;">Started: 15.10.2025 </p>
+	</footer>
+	   
+	<!-- hier habe ich das script hinzugefügt, 
+	welches für das plant minigame genutzt wird. 
+	Indem man auf die pflanze klickt, startet es -->
+
+	   <script src="PlantMinigame.js"></script>
+  
+</body>
+</html>
