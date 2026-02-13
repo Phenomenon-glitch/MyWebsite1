@@ -19,8 +19,12 @@ stage 3: slime(fully evolved) -> can be clicked on to pet. This is the final sta
 Ideas for future:
 
 -add a new seperate page to show my music projects.
+
 -do more stages in the minigame, or add cosmetics
+
 -add unity API so a demo of my game is playable.
+
 -add more WIP videos or screenshots.
+
 -add a seperate page about the game i am programming itself(story, characters, landscapes...)
 
